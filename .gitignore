@@ -1,4 +1,5 @@
-/dist/
-/docs/
-/node_modules/
-/.npmrc
+node_modules/
+docs/
+dist/
+.npmrc
+.clasp.json

@@ -1,0 +1,20 @@
+{
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.16.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-multi-entry": "^6.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@tsht99/lib-gas-database": "workspace:*",
+    "child_process": "^1.0.2",
+    "clasp": "^1.0.0",
+    "rollup": "^2.61.0",
+    "ts-node": "^10.9.1"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "push": "pnpm run build && ts-node ./scripts/push.ts",
+    "deploy": "pnpm run push && ts-node ./scripts/deploy.ts"
+  }
+}
