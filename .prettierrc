@@ -6,7 +6,7 @@
   "semi": false,
   "overrides": [
     {
-      "files": ["*.json", ".prettierrc"],
+      "files": ["*.json", "*.yaml", ".prettierrc"],
       "options": {
         "tabWidth": 2
       }
