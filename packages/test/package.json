@@ -9,11 +9,13 @@
     "@tsht99/lib-gas-database": "workspace:*",
     "child_process": "^1.0.2",
     "clasp": "^1.0.0",
+    "rimraf": "^5.0.5",
     "rollup": "^2.61.0",
     "ts-node": "^10.9.1"
   },
   "scripts": {
-    "build": "rollup -c",
+    "clean": "rimraf dist",
+    "build": "pnpm run clean && rollup -c",
     "push": "pnpm run build && ts-node ./scripts/push.ts",
     "deploy": "pnpm run push && ts-node ./scripts/deploy.ts"
   }

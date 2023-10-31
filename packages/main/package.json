@@ -8,6 +8,7 @@
     "@tsht99/lib-gas-utils": "^0.1.3",
     "@types/google-apps-script": "^1.0.76",
     "esbuild": "^0.19.5",
+    "rimraf": "^5.0.5",
     "typedoc": "^0.25.2"
   },
   "files": [
@@ -20,7 +21,8 @@
     "url": "https://github.com/tsht99/lib-gas-database"
   },
   "scripts": {
-    "build": "esbuild --bundle src/index.ts --outfile=dist/index.js --format=esm && tsc --declaration --emitDeclarationOnly --declarationDir dist",
+    "clean": "rimraf dist",
+    "build": "pnpm run clean && esbuild --bundle src/index.ts --outfile=dist/index.js --format=esm && tsc --declaration --emitDeclarationOnly --declarationDir dist",
     "doc": "typedoc src/index.ts"
   },
   "types": "dist/index.d.ts"

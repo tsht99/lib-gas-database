@@ -1,6 +1,9 @@
 {
+  "devDependencies": {
+    "rimraf": "^5.0.5"
+  },
+  "license": "MIT",
   "scripts": {
     "build:m": "pnpm -r --filter=./packages/main run build"
-  },
-  "license": "MIT"
+  }
 }
