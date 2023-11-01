@@ -1,1 +1,1 @@
-export * from './SheetDatabase'
+export * from './Table'
