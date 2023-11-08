@@ -1,0 +1,17 @@
+{
+  "name": "lib-gas-database",
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "rimraf": "^5.0.5"
+  },
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "pnpm run build:m && pnpm run build:t",
+    "build:m": "pnpm -r --filter=./packages/main run build",
+    "build:t": "pnpm -r --filter=./packages/test run build",
+    "deploy:t": "pnpm -r --filter=./packages/test run deploy",
+    "push:t": "pnpm -r --filter=./packages/test run push",
+    "test": "pnpm -r --filter=./packages/test run test"
+  }
+}

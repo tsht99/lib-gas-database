@@ -1,0 +1,35 @@
+{
+  "name": "@tsht99/lib-gas-database",
+  "description": "スプレッドシートを DB にするライブラリ",
+  "version": "0.0.1",
+  "author": "tsht99",
+  "bugs": "https://github.com/tsht99/lib-gas-database/issues",
+  "devDependencies": {
+    "@tsht99/lib-gas-utils": "^0.2.1",
+    "@types/google-apps-script": "^1.0.76",
+    "dotenv": "^16.3.1",
+    "esbuild": "^0.19.5",
+    "rimraf": "^5.0.5",
+    "typedoc": "^0.25.2"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.9.0"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "homepage": "https://github.com/tsht99/lib-gas-database#readme",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tsht99/lib-gas-database"
+  },
+  "scripts": {
+    "build": "pnpm run clean && ts-node esbuild.config.ts && tsc",
+    "clean": "rimraf dist",
+    "doc": "typedoc src/index.ts"
+  },
+  "types": "dist/index.d.ts"
+}
