@@ -29,6 +29,12 @@ jobs:
               with:
                   version: 8.9.0
 
+            # .npmrcファイルを作成し、PATを設定
+            - name: setup .npmrc
+              run: |
+                  echo "//npm.pkg.github.com/:_authToken=${{ secrets.PAT }}" > .npmrc
+                  echo "@tsht99:registry=https://npm.pkg.github.com" >> .npmrc
+
             # 必要なモジュール（typescript）をインストール
             - name: install node_modules
               run: pnpm install
