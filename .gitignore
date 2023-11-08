@@ -3,3 +3,4 @@ docs/
 dist/
 .npmrc
 .clasp.json
+.env
