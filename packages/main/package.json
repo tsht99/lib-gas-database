@@ -10,6 +10,7 @@
     "dotenv": "^16.3.1",
     "esbuild": "^0.19.5",
     "rimraf": "^5.0.5",
+    "ts-node": "^10.9.1",
     "typedoc": "^0.25.2"
   },
   "engines": {

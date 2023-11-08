@@ -32,6 +32,9 @@ importers:
       rimraf:
         specifier: ^5.0.5
         version: 5.0.5
+      ts-node:
+        specifier: ^10.9.1
+        version: 10.9.1(@types/node@20.8.10)(typescript@5.2.2)
       typedoc:
         specifier: ^0.25.2
         version: 0.25.3(typescript@5.2.2)
