@@ -1,3 +1,5 @@
-import { SheetDatabase as _SheetDatabase } from '@tsht99/lib-gas-database'
+import { doPost as _doPost } from '@tsht99/lib-gas-database'
 
-const SheetDatabase = _SheetDatabase
+const doPost = (event: GoogleAppsScript.Events.DoPost) => {
+    return _doPost(event, '.reservation')
+}
