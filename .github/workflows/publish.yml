@@ -45,7 +45,7 @@ jobs:
 
             # パッケージとして公開する
             - name: publish
-              run: cd packages/main && pnpm publish || echo "No need to publish"
+              run: cd packages/main && pnpm publish
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
