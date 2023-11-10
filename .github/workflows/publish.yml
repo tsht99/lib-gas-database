@@ -51,7 +51,7 @@ jobs:
             - name: check version exists
               id: check_version
               run: |
-                  VERSION_EXISTS=$(curl --silent --head --fail https://npm.pkg.github.com/@tsht99/main/v${{ env.VERSION }} > /dev/null && echo "true" || echo "false")
+                  VERSION_EXISTS=$(curl --silent --head --fail https://npm.pkg.github.com/tsht99/lib-gas-database@${{ env.VERSION }} > /dev/null && echo "true" || echo "false")
                   echo "::set-output name=version_exists::$VERSION_EXISTS"
 
             # パッケージとして公開する
