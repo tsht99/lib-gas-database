@@ -1,2 +1,1 @@
-# lib-gas-database
-スプレッドシートを DB にするライブラリ
+[@tsht99/lib-gas-database の README.md](./packages/main/README.md) を参照してください。
